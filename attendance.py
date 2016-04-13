@@ -1,5 +1,5 @@
 __author__ = 'student'
-import time
+from time import localtime, strftime
 
 student_info = {'4401001': 'Christine Adewale',
 '44001722': 'Wayne Bertrand',
@@ -20,4 +20,4 @@ while True:
     if s_id in ['q', 'Q']:
         break
     else:
-        print('%s checked in - %s' % (student_info[s_id], time.time()))
+        print(('%s checked in - %s' % (student_info[s_id],((strftime("%a, %d %b %Y %H:%M:%S ", localtime()))))))
