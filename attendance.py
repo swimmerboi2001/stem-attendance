@@ -20,4 +20,4 @@ while True:
     if s_id in ['q', 'Q']:
         break
     else:
-        print('%s checked in - %s' % (student_info[s_id], time.time()))
+    	print('%s checked in - %s' % (student_info[s_id], time.strftime("%I:%M %p")))
