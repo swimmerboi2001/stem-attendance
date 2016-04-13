@@ -14,7 +14,6 @@ student_info = {'4401001': 'Christine Adewale',
 '4401121' : 'Max Quevedo',
 '302319' : 'Marianna Said',
 '4401094' : 'Sebastian Tapia'}
-time = time.strftime("%I:%M %p")
 while True:
     s_id = input('Scan student id: ')
-    print('%s checked in - %s' % (student_info[s_id], time))
+    print('%s checked in - %s' % (student_info[s_id], time.strftime("%I:%M %p")))
