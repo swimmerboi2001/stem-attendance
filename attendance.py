@@ -16,7 +16,7 @@ student_info = {'4401001': 'Christine Adewale',
 '4401094' : 'Sebastian Tapia'}
 
 while True:
-    s_id = input('Scan student id: ')
+   s_id = input("Scan student id or type 'q' or 'Q' to end the loop: ")
     if s_id in ['q', 'Q']:
         break
     else:
