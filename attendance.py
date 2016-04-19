@@ -16,5 +16,14 @@ student_info = {'4401001': 'Christine Adewale',
 '4401094' : 'Sebastian Tapia'}
 
 while True:
-    s_id = input('Scan student id: ')
-    print('%s checked in - %s' % (student_info[s_id], time.time()))
+    s_id = input('Scan student id, enter L for late, or enter Q to quit: ')
+    if s_id in ['q', 'Q']:
+        break
+    elif s_id in ['l', 'L']:
+        s_id = input('Scan late student id or enter Q to quit: ')
+        if s_id in ['q', 'Q']:
+            break
+        else:
+            print('%s checked in late - %s' % (student_info[s_id], time.strftime("%I:%M %p")))
+    else:
+        print('%s checked in - %s' % (student_info[s_id], time.strftime("%I:%M %p")))
